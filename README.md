@@ -40,21 +40,37 @@ Project under active development.
 ## Project Structure
 
 src/main/java/com/paulo/ecommerceapp
+
 ├── config
+
 ├── controller
+
 ├── dto
+
 ├── exception
+
 ├── model
+
 │ ├── CartItem.java
+
 │ ├── OrderItem.java
+
 │ ├── Order.java
+
 │ ├── OrderStatus.java
+
 │ ├── Product.java
+
 │ ├── Role.java
+
 │ ├── ShoppingCart.java
+
 │ └── User.java
+
 ├── repository
+
 ├── security
+
 └── service
 
 ---
