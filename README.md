@@ -51,22 +51,6 @@ src/main/java/com/paulo/ecommerceapp
 
 ├── model
 
-│ ├── CartItem.java
-
-│ ├── OrderItem.java
-
-│ ├── Order.java
-
-│ ├── OrderStatus.java
-
-│ ├── Product.java
-
-│ ├── Role.java
-
-│ ├── ShoppingCart.java
-
-│ └── User.java
-
 ├── repository
 
 ├── security
