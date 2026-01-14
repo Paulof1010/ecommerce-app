@@ -1,15 +1,22 @@
-package com.paulo.ecommerceapp.model;
+package com.paulof1010.ecommerceapp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Entity
 @Getter
 public class Product {
 
+    @Id
+    @GeneratedValue
     private Integer id;
+
     @Setter
     private String name;
     @Setter

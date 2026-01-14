@@ -1,4 +1,4 @@
-package com.paulo.ecommerceapp.model;
+package com.paulof1010.ecommerceapp.model;
 
 import lombok.Getter;
 

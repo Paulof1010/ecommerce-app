@@ -1,13 +1,20 @@
-package com.paulo.ecommerceapp.model;
+package com.paulof1010.ecommerceapp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
 
+@Entity
 @Getter
 public class User {
 
+    @Id
+    @GeneratedValue
     private Integer id;
+
     private final String email;
     private String password;
     private final Role role;

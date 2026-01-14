@@ -1,15 +1,25 @@
-package com.paulo.ecommerceapp.model;
+package com.paulof1010.ecommerceapp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Entity
 @Getter
 public class OrderItem {
 
+    @Id
+    @GeneratedValue
     private Integer id;
+
+    @ManyToOne
     private final Product product;
+
     private Integer quantity;
     private final BigDecimal price;
     private final LocalDateTime createdAt;

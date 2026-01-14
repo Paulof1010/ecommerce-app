@@ -1,5 +1,6 @@
-package com.paulo.ecommerceapp.model;
+package com.paulof1010.ecommerceapp.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,13 +9,23 @@ import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 
+@Entity
 @Getter
 public class Order {
 
+    @Id
+    @GeneratedValue
     private Integer id;
+
+    @ManyToOne
     private User user;
+
+    @OneToMany (cascade = CascadeType.ALL)
     private List<OrderItem> items;
+
+    @Enumerated (EnumType.STRING)
     private OrderStatus status;
+
     private final LocalDateTime createdAt;
     @Setter
     private LocalDateTime updatedAt;
